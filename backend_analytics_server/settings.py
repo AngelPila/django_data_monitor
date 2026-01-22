@@ -90,16 +90,16 @@ WSGI_APPLICATION = "backend_analytics_server.wsgi.application"
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 # Para usar MySQL, descomente las siguientes líneas y comente la configuración SQLite:
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': os.environ.get('MYSQLDATABASE'),
-#         'USER': os.environ.get('MYSQLUSER'),
-#         'PASSWORD': os.environ.get('MYSQLPASSWORD'),
-#         'HOST': os.environ.get('MYSQLHOST'),
-#         'PORT': os.environ.get('MYSQLPORT'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get('MYSQLDATABASE'),
+        'USER': os.environ.get('MYSQLUSER'),
+        'PASSWORD': os.environ.get('MYSQLPASSWORD'),
+        'HOST': os.environ.get('MYSQLHOST'),
+        'PORT': os.environ.get('MYSQLPORT'),
+     }
+}
 
 DATABASES = {
     "default": {
